@@ -22,17 +22,18 @@
             hash.Add("13", "deleberately");
             hash.Add("14", "into");
             hash.Add("15", "paranoid");
-            hash.Add("5", "avoidable");
-            hash.Add("5", "situations");
-            string hash5 = hash.Get("5");
-            string hash3 = hash.Get("3");
-            string hash12 = hash.Get("12");
-            string hash8 = hash.Get("8");
+            hash.Add("16", "avoidable");
+            hash.Add("17", "situations");
 
-            Console.WriteLine("Value of key 5 is :" + " " + hash5);
-            Console.WriteLine("Value of key 3 is :" + " " + hash3);
-            Console.WriteLine("Value of key 12 is :" + " " + hash12);
-            Console.WriteLine("Value of key 8 is :" + " " + hash8);
+            hash.Remove("5");
+            hash.Remove("16");
+            string hash10 = hash.Get("10");
+            string hash5 = hash.Get("5");
+            string hash16 = hash.Get("16");
+            Console.WriteLine("10th index value is :" + hash10);
+            Console.WriteLine("5th index value is :" + hash5);
+            Console.WriteLine("16th index value is :" + hash16);
+
         }
     }
 }
